@@ -60,7 +60,7 @@ nav ul {
 
 article {
   float: left;
-  padding: 20px;
+  padding: 5px;
   width: 70%;
 }
 
@@ -122,13 +122,68 @@ table {
     height: auto;
   }
 }
+
+.marquee {
+            height: 50px;
+            overflow: hidden;
+            position: relative;
+            background: #fefefe;
+            color: rgba(2, 12, 66, 0.68);
+            border: 1px solid rgba(2, 12, 66, 0.68);;
+        }
+        
+        .marquee p {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            line-height: 50px;
+            text-align: center;
+            -moz-transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+            -moz-animation: scroll-left 1s linear infinite;
+            -webkit-animation: scroll-left 1s linear infinite;
+            animation: scroll-left 9s linear infinite;
+        }
+        
+        @-moz-keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+            }
+        }
+        
+        @-webkit-keyframes scroll-left {
+            0% {
+                -webkit-transform: translateX(100%);
+            }
+            100% {
+                -webkit-transform: translateX(-100%);
+            }
+        }
+        
+        @keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(100%);
+                -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+            }
+        }
 </style>
 </head>
 <body>
 
-<header>
-  <h2 style="color: black;">COLLEGE PLACEMENT</h2>
-</header>
+  <header>
+    <h2 style="color: black;"> COLLEGE PLACEMENT </h2>
+  </header>
 
 <section>
   <nav>
@@ -201,6 +256,11 @@ table {
     </table>    
   </article>
 </section>
+<footer>
+  <div class="marquee">
+      <p>Last year Placements!! </p>
+  </div>
+</footer>
 
 </body>
 </html>
