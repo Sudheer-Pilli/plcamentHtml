@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: rgba(3, 164, 228, 0.68);
+  padding: 5px;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(235, 233, 233);
+}
+
+a:link, a:visited{
+  color: rgba(2, 12, 66, 0.68);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #f1eaea;
+  color: rgba(2, 12, 66, 0.68);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  float: left;
+  width: 30%;
+  
+  background:rgba(1, 112, 156, 0.68);
+  padding: 20px;
+
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 42px;
+text-align: center;
+
+color: #000000;
+} 
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgba(2, 12, 66, 0.68);
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.marquee {
+            height: 50px;
+            overflow: hidden;
+            position: relative;
+            background: #fefefe;
+            color: rgba(2, 12, 66, 0.68);
+            border: 1px solid rgba(2, 12, 66, 0.68);;
+        }
+        
+        .marquee p {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            line-height: 50px;
+            text-align: center;
+            -moz-transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+            -moz-animation: scroll-left 1s linear infinite;
+            -webkit-animation: scroll-left 1s linear infinite;
+            animation: scroll-left 30s linear infinite;
+        }
+        
+        @-moz-keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+            }
+        }
+        
+        @-webkit-keyframes scroll-left {
+            0% {
+                -webkit-transform: translateX(100%);
+            }
+            100% {
+                -webkit-transform: translateX(-100%);
+            }
+        }
+        
+        @keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(100%);
+                -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+            }
+        }
+</style>
+</head>
+<body>
+
+<header>
+  <h2 style="color: black;"> COLLEGE PLACEMENT</h2>
+</header>
+
+<section>
+  <nav>
+    <h3 style="color: black;">
+      <a href='index.html'>Home</a>
+  </h3>
+    <h4 style="color: black;">Companies Details </h4>
+    <ul>
+      <li><a href="section_A.html">Prev_comp</a></li>
+      <li><a href="section_B.html">This_year comp</a></li>
+    </ul>
+
+  </nav>
+  
+  <article>
+    <h1 style="color: black;" >ABOUT US</h1>
+    <p>The Placement Office facilitates the students to explore the world of employment and new career avenues. It also helps students in career planning through counseling where in they gather information about themselves in terms of their interests, aptitudes and abilities so that they can choose their career more effectively. The objective of the Placement Office is also on the professional development of the students by training them towards employability skills such as resume building, group discussion and interview skills which in turn helps the students to move into a desired occupation and/or apply in prestigious postgraduate and professional schools.</p>
+    <p>The Placement Office takes the initiative to explore new career avenues for graduates and post graduates through visits to new companies and unexplored sectors. Campus recruitments are organized every year. The selection process generally starts with a pre-placement talk in which a firm/organisation gives the students insights into the company profile, job profile, career path, CTC etc. which is followed by the actual selection process i.e., written test, group discussion, interview etc. The University has state-of-the-art facilities that make campus recruitment a pleasant experience. Student placement representatives from each class are also present to provide assistance throughout the selection process.</p>
+
+  </article>
+</section>
+
+<footer>
+    <div class="marquee">
+        <p> Placement cell !! </p>
+    </div>
+</footer>
+
+</body>
+</html>
